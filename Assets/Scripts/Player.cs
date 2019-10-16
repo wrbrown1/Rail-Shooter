@@ -10,8 +10,6 @@ public class Player : MonoBehaviour
     [Tooltip("in m/s")] [SerializeField] float xSpeed = 4f;
     [Tooltip("in m/s")] [SerializeField] float ySpeed = 4f;
 
-    float xThrow, yThrow;
-
     [Tooltip("how far the ship can go left")] [SerializeField] float leftClamp = -3.5f;
     [Tooltip("how far the ship can go right")] [SerializeField] float rightClamp = 3.5f;
 
@@ -23,17 +21,17 @@ public class Player : MonoBehaviour
     [SerializeField] float controlThrowFactor = -10f;
     [SerializeField] float controlRollFactor = -10f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float xThrow, yThrow;
 
-    // Update is called once per frame
+    bool controlsEnabled = true;
+
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (controlsEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
 
     private void ProcessRotation()
@@ -60,5 +58,11 @@ public class Player : MonoBehaviour
         yNewPosition = Mathf.Clamp(yNewPosition, downClamp, upClamp);
 
         transform.localPosition = new Vector3(xNewPosition, yNewPosition, transform.localPosition.z);//LocalPosition is the position in terms of the parent object
+    }
+
+    private void PlayerDeath()
+    {
+        print("message recieved");
+        controlsEnabled = false;
     }
 }
