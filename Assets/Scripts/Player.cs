@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 
     [Tooltip("in m/s")] [SerializeField] float xSpeed = 4f;
     [Tooltip("in m/s")] [SerializeField] float ySpeed = 4f;
+    [SerializeField] GameObject[] guns;
 
     [Tooltip("how far the ship can go left")] [SerializeField] float leftClamp = -3.5f;
     [Tooltip("how far the ship can go right")] [SerializeField] float rightClamp = 3.5f;
@@ -31,6 +32,36 @@ public class Player : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
+        }
+    }
+
+    void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateGuns();
+        }
+        else
+        {
+            DeactivateGuns();
+        }
+
+    }
+
+    void DeactivateGuns()
+    {
+        foreach(GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
+    }
+
+    void ActivateGuns()
+    {
+        foreach(GameObject gun in guns)
+        {
+            gun.SetActive(true);
         }
     }
 

@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Seftdestruct : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //simple script to destroy a game object after a 5 second delay
     void Start()
     {
         Destroy(gameObject, 5f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

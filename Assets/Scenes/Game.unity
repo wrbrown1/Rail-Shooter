@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb944584bd353e41987a8aba2bb28ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 10
 --- !u!1001 &65602639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1597,6 +1598,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSpeed: 7
   ySpeed: 7
+  guns:
+  - {fileID: 1605906954}
+  - {fileID: 2051275672}
   leftClamp: -6
   rightClamp: 6
   downClamp: -3.5
@@ -2162,6 +2166,12 @@ Transform:
   m_Father: {fileID: 467812016}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1605906954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6238121401072089353, guid: 29d6bec5bdf93d94b96c4931859344b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 6238121401230802492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1692124674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2476,6 +2486,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2051275672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6238121401072089353, guid: 29d6bec5bdf93d94b96c4931859344b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 700374336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2085046794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,

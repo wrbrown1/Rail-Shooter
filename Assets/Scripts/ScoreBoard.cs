@@ -6,21 +6,19 @@ using UnityEngine.UI;
 public class ScoreBoard : MonoBehaviour
 {
 
-    [SerializeField] int scorePerHit = 10;
-
     int score;
-    Text scoreText;
+    Text scoreText;//Open a "text-shaped" box
 
-    // Start is called before the first frame update
     void Start()
     {
-        scoreText = GetComponent<Text>();
+        scoreText = GetComponent<Text>();//Put the box that is on your object in the box
         scoreText.text = score.ToString();
     }
 
-    public void ScoreHit()
+    public void ScoreHit(int scoreHit)
     {
-        score = score + scorePerHit;
+        score = score + scoreHit;
         scoreText.text = score.ToString();
+        print(score);
     }
 }
