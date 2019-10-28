@@ -6,10 +6,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
+    [SerializeField] GameObject damageFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 10;
     [SerializeField] int healthPoints = 100;
-    [SerializeField] GameObject takeDamageEffect;
 
     ScoreBoard scoreBoard;
     Player player;
@@ -36,7 +36,8 @@ public class Enemy : MonoBehaviour
     private void TakeDamage()
     {
         healthPoints = healthPoints - player.gunDamage;
-        // todo add particle effects on hit
+        GameObject fx = Instantiate(damageFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
         if(healthPoints <= 0)
         {
             KillEnemy();

@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (5)
+      value: Ship_13
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -304,10 +304,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &59177136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
@@ -333,10 +333,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &65602639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -347,42 +347,42 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (10)
+      value: Ship_09
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -128.86853
+      value: -13.1
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -209.40836
+      value: -146.3
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7145538
+      value: 151.1
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.037153453
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9983619
+      value: 0.93403095
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.18230286
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.05721537
+      value: -0.30491218
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -392,17 +392,17 @@ PrefabInstance:
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 18.536001
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 186.56
+      value: 217.95499
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 10.979
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -441,10 +441,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
+--- !u!95 &65602645
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65602641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &65602646
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65602641}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 271803d38abc73d43afefe1638ac3762, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -4004908206164814970, guid: 271803d38abc73d43afefe1638ac3762, type: 2}
+    value: {fileID: 65602645}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &77447409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
@@ -464,10 +502,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &123584859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,7 +516,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (19)
+      value: Ship_21
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -626,7 +664,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (13)
+      value: Ship_15
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -710,10 +748,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &251775140
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +822,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (20)
+      value: Ship_22
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -927,7 +965,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (7)
+      value: Ship_05
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -1057,10 +1095,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &636240399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1071,7 +1109,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (8)
+      value: Ship_06
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -1155,10 +1193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &668129546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1168,7 +1206,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
       propertyPath: m_Name
-      value: Ship_01 (2)
+      value: Ship_03
       objectReference: {fileID: 0}
     - target: {fileID: 4232234352724882, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1353,10 +1391,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &732889801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1445,10 +1483,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &769399358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1622,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
       propertyPath: m_Name
-      value: Ship_01 (1)
+      value: Ship_02
       objectReference: {fileID: 0}
     - target: {fileID: 4232234352724882, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1766,10 +1804,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &873690715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4,
@@ -1801,10 +1839,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &938317888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,7 +2099,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (11)
+      value: Ship_10
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -2155,10 +2193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &1044278319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2169,7 +2207,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (12)
+      value: Ship_14
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -2253,10 +2291,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1107265984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,10 +2350,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1192746193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
@@ -2335,10 +2373,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1212884796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2439,10 +2477,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1272079326 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
@@ -2468,10 +2506,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &1275489829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2482,7 +2520,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (15)
+      value: Ship_17
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -2762,7 +2800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406170226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81, y: -65.5, z: 362}
+  m_LocalPosition: {x: 81, y: -48.5, z: 362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 467812016}
@@ -2778,7 +2816,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (16)
+      value: Ship_18
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -2856,10 +2894,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1472690038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1249553951781956, guid: 6a7580c2fbbc4fe41947b58d9f7d3f2b,
@@ -2885,10 +2923,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 500
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1476442798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
@@ -2914,10 +2952,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1001 &1511135209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2928,7 +2966,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (14)
+      value: Ship_16
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -2997,7 +3035,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (9)
+      value: Ship_07
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -3081,10 +3119,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1546530355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,7 +3163,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (18)
+      value: Ship_20
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -3200,7 +3238,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (6)
+      value: Ship_04
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -3284,10 +3322,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 168461667925916340, guid: 9cd89df196ad3a7479bdfffdd2b4d625, type: 3}
+  damageFX: {fileID: 168461667925916340, guid: ea43e8560ee5f4342a34837cbfc560d4, type: 3}
   parent: {fileID: 1999455464}
   scorePerHit: 10
   healthPoints: 150
-  takeDamageEffect: {fileID: 0}
 --- !u!1 &1738515376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,7 +3366,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (3)
+      value: Ship_11
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -3471,7 +3509,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (4)
+      value: Ship_12
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
@@ -3651,7 +3689,7 @@ PrefabInstance:
     - target: {fileID: 4435558055068696411, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
       propertyPath: m_Name
-      value: Ship_01 (17)
+      value: Ship_19
       objectReference: {fileID: 0}
     - target: {fileID: 4432265549303067795, guid: 2b2e7efbd23b6ef46a437dd0a5703f99,
         type: 3}
