@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     [SerializeField] float controlThrowFactor = -10f;
     [SerializeField] float controlRollFactor = -10f;
 
+    [SerializeField]  public int gunDamage = 25;
+
     float xThrow, yThrow;
 
     bool controlsEnabled = true;
@@ -93,7 +95,6 @@ public class Player : MonoBehaviour
 
     private void PlayerDeath()
     {
-        print("message recieved");
         controlsEnabled = false;
     }
 }
